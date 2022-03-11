@@ -1,0 +1,1750 @@
+{
+	"info": {
+		"_postman_id": "991ee8ba-4660-4787-875e-79026ae69f42",
+		"name": "sercirity_postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "company",
+					"item": [
+						{
+							"name": "Get list data",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "hung",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "project_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/company/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"company",
+										""
+									]
+								},
+								"description": "Get list content company"
+							},
+							"response": []
+						},
+						{
+							"name": "Create new data",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Unisoft",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "02 Quang Trung",
+											"type": "text"
+										},
+										{
+											"key": "phone_number",
+											"value": "0988777999",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "unisoft$gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "date_incorporation",
+											"value": "2000-02-03",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/company",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"company"
+									]
+								},
+								"description": "create new data"
+							},
+							"response": []
+						},
+						{
+							"name": "Update data",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Software company",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "software@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "phone_number",
+											"value": "0888777666",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "07 Le Duan",
+											"type": "text"
+										},
+										{
+											"key": "date_incorporation",
+											"value": "2000-04-02",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/company/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"company",
+										"1"
+									]
+								},
+								"description": "Update data"
+							},
+							"response": []
+						},
+						{
+							"name": "Search name company",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "FPT company",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/company-search/fpt",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"company-search",
+										"fpt"
+									]
+								},
+								"description": "search data"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "work-room",
+					"item": [
+						{
+							"name": "Get list data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/work-room",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"work-room"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create new data",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Tang 7",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "02 Quang Trung",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/work-room/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"work-room",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update data",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "floor 10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/work-room/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"work-room",
+										"1"
+									]
+								},
+								"description": "Update data"
+							},
+							"response": []
+						},
+						{
+							"name": "Search name work room",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/work-room-search/floor",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"work-room-search",
+										"floor"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "member",
+					"item": [
+						{
+							"name": "Get list data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create new data",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Cao  Anh Tai",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "tai@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "05 Nguyen Huu Tho",
+											"type": "text"
+										},
+										{
+											"key": "phone_number",
+											"value": "0988666888",
+											"type": "text"
+										},
+										{
+											"key": "work_position",
+											"value": "Dev",
+											"type": "text"
+										},
+										{
+											"key": "date_join_company",
+											"value": "2022-02-02",
+											"type": "text"
+										},
+										{
+											"key": "date_left_company",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "company_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get foreign key",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member-foreign",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member-foreign"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search name member",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member-search/hung",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member-search",
+										"hung"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "project",
+					"item": [
+						{
+							"name": "Get list data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/project/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"project",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create new data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Project",
+											"type": "text"
+										},
+										{
+											"key": "time_start",
+											"value": "2022-02-02",
+											"type": "text"
+										},
+										{
+											"key": "time_completed",
+											"value": "2022-04-04",
+											"type": "text"
+										},
+										{
+											"key": "company_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "work_room_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/project",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"project"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Demo",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/project/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"project",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get foreign key",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "name",
+										"value": "company",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/project-foreign/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"project-foreign",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search name project",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "name",
+										"value": "demo",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/project-search/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"project-search",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "member-project",
+					"item": [
+						{
+							"name": "Get list data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member-project",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member-project"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create new data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "project_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "member_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "PM",
+											"type": "text"
+										},
+										{
+											"key": "time_member_join",
+											"value": "2022-02-04",
+											"type": "text"
+										},
+										{
+											"key": "time_member_completed",
+											"value": "2022-06-04",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member-project",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member-project"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get data edit",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "project_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "member_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member-project-edit",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member-project-edit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update data",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "project_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "member_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "role",
+											"value": "BA",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member-project-update",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member-project-update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get foreign key",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "member",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member-project-foreign",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member-project-foreign"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search name member project",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member-project-search",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member-project-search"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "training",
+					"item": [
+						{
+							"name": "Get list data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/training",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"training"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create new data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "trainer",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "Learn php",
+											"type": "text"
+										},
+										{
+											"key": "project_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/training",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"training"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/training/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"training",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get foreign key",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "member",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "project",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/training-foreign",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"training-foreign"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search name training",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/member-project-search",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"member-project-search"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "training-room",
+					"item": [
+						{
+							"name": "Get list data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/training-room",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"training-room"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create new data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "training_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "member_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "date_start",
+											"value": "2022-02-02",
+											"type": "text"
+										},
+										{
+											"key": "date_completed",
+											"value": "2022-04-02",
+											"type": "text"
+										},
+										{
+											"key": "result",
+											"value": "ok",
+											"type": "text"
+										},
+										{
+											"key": "note",
+											"value": "ok",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/training-room",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"training-room"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/training-room-update/1/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"training-room-update",
+										"1",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get data edit",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "training_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "member_id",
+											"value": "5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/training-room-edit",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"training-room-edit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get foreign key",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/training-room-foreign",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"training-room-foreign"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search name training room",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/training-room-search",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"training-room-search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sub query data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/training-room-sub-query",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"training-room-sub-query"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "device",
+					"item": [
+						{
+							"name": "Get list data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/device",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"device"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create new data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "ip_address",
+											"value": "196.186...",
+											"type": "text"
+										},
+										{
+											"key": "ip_mac",
+											"value": "198..",
+											"type": "text"
+										},
+										{
+											"key": "user_login",
+											"value": "hung",
+											"type": "text"
+										},
+										{
+											"key": "version_win",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "version_virus",
+											"value": "8",
+											"type": "text"
+										},
+										{
+											"key": "update_win",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "member_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/device",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"device"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/device/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"device",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get foreign key",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "member",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/device-foreign",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"device-foreign"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search name training",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "user_login",
+											"value": "hung",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/device-search",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"device-search"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "carbinet",
+					"item": [
+						{
+							"name": "Get list data",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/carbinet",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"carbinet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create new data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "clothes",
+											"type": "text"
+										},
+										{
+											"key": "work_room_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "member_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/carbinet",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"carbinet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/carbinet/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"carbinet",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get foreign key",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "work_room",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "member",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/carbinet-foreign",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"carbinet-foreign"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search name carbinet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/admin/carbinet-search/shoes",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"admin",
+										"carbinet-search",
+										"shoes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "view",
+			"item": []
+		}
+	]
+}

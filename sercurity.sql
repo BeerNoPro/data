@@ -49,7 +49,7 @@ CREATE TABLE `member_project` (
   `member_id` int NOT NULL,
   `role` varchar(20),
   `time_member_join` varchar(20),
-  `time_member_complted` varchar(20),
+  `time_member_completed` varchar(20),
   `created_at` datetime,
   `updated_at` datetime
 );
